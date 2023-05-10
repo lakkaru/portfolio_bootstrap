@@ -1,6 +1,9 @@
 nav img {
   width: 40px;
 }
+.nav-link{
+  color: aliceblue;
+}
 .nav-link:hover {
   color: #00b1b3 !important;
 }
