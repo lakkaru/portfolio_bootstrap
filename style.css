@@ -15,6 +15,13 @@ header {
   background-repeat: no-repeat;
   background-size: 23%;
 }
+
+/* .carousel-caption{
+  display: none;
+  color: #00563F;
+  font-weight: 600;
+  font-size: 1.1em;
+} */
 /* .nav-link::after {
   content: "";
   width: 3%;
