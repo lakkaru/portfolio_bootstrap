@@ -1,3 +1,23 @@
-nav img{
-    width: 40px;
+nav img {
+  width: 40px;
 }
+.nav-link:hover {
+  color: #00b1b3 !important;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/background.webp");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 23%;
+}
+/* .nav-link::after {
+  content: "";
+  width: 3%;
+  height: 3px;
+  background: #2bcd01;
+   left: 0; 
+  bottom: 12px;
+  position: absolute;
+} */
