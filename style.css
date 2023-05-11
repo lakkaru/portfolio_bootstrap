@@ -1,7 +1,7 @@
 nav img {
   width: 40px;
 }
-.nav-link{
+.nav-link {
   color: aliceblue;
 }
 .nav-link:hover {
@@ -15,7 +15,43 @@ header {
   background-repeat: no-repeat;
   background-size: 23%;
 }
- 
+#dl-nav {
+  display: inline-block;
+}
+#dl-head {
+  display: none;
+}
+.tab-content li span {
+  color: #00c954;
+}
+
+@media (max-width: 425px) {
+  #home {
+    padding-top: 4rem;
+  }
+  #dl-nav {
+    display: none;
+  }
+  #dl-head {
+    display: inline-block;
+  }
+  header {
+    background-position: center top;
+    /* margin-bottom: 50%; */
+    /* margin-top:10px; */
+    background-size: 33%;
+  }
+  #header-text {
+    padding-bottom: 15px;
+  }
+  .card-deck {
+    width: 100%;
+    justify-content: center !important;
+  }
+  .carousel-item img{
+    width:75% !important;
+  }
+}
 /* .carousel-caption{
   display: none;
   color: #00563F;
