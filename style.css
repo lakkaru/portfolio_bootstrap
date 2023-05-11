@@ -24,7 +24,9 @@ header {
 .tab-content li span {
   color: #00c954;
 }
-
+#membership-image img{
+  width: 120px ;
+}
 @media (max-width: 425px) {
   #home {
     padding-top: 4rem;
@@ -51,6 +53,10 @@ header {
   .carousel-item img{
     width:75% !important;
   }
+  #membership-image img{
+    width: 100px ;
+  }
+  
 }
 /* .carousel-caption{
   display: none;
