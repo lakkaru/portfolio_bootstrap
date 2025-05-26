@@ -17,6 +17,7 @@ header {
 }
 #dl-nav {
   display: inline-block;
+  color: #79b6f1; /* Moved from inline style */
 }
 #dl-head {
   display: none;
@@ -24,9 +25,35 @@ header {
 .tab-content li span {
   color: #00c954;
 }
+.card {
+  /* Default width for portfolio cards */
+  flex-basis: 18rem;
+  margin-bottom: 1rem; /* Add some space between cards */
+}
 #membership-image img{
   width: 120px ;
 }
+
+/* Styles moved from inline attributes */
+.navbar .container > div > span { /* Targeting the span next to the logo image */
+  color: #27d100;
+}
+
+/* #dl-nav color is handled above by merging with the existing rule */
+
+#header-text h1 span {
+  color: #00bbbb;
+}
+
+#header-text h3 {
+  color: rgb(0, 201, 84);
+}
+
+#header-text h6 {
+  color: #add8e6;
+}
+/* End of styles moved from inline attributes */
+
 @media (max-width: 425px) {
   #home {
     padding-top: 4rem;
@@ -38,25 +65,52 @@ header {
     display: inline-block;
   }
   header {
+    height: auto; /* Adjust height to content */
     background-position: center top;
-    /* margin-bottom: 50%; */
-    /* margin-top:10px; */
-    background-size: 33%;
+    background-size: contain; /* Ensure image is visible and scales nicely */
+    padding-bottom: 3rem; /* Add padding to the bottom for spacing */
+    /* Note: header tag in HTML has pt-5 class (padding-top: 3rem) */
   }
   #header-text {
-    padding-bottom: 15px;
+    padding-bottom: 15px; /* This existing padding can remain or be adjusted if needed */
+  }
+  #header-text h1 {
+    font-size: calc(1.325rem + 0.9vw); /* Equivalent to Bootstrap's fs-2 */
+  }
+  .sub-title, #contact h2 { /* #contact h2 also uses fs-1 */
+    font-size: calc(1.325rem + 0.9vw); /* Equivalent to Bootstrap's fs-2, fs-1 is a bit large */
   }
   .card-deck {
     width: 100%;
     justify-content: center !important;
   }
+  .card {
+    flex-basis: 100%; /* Make cards full width on small screens */
+    max-width: 100%;
+  }
   .carousel-item img{
-    width:75% !important;
+    width: 90% !important; /* Adjust width for smaller screens, but allow some padding */
   }
   #membership-image img{
     width: 100px ;
   }
-  
+  .memebrship-list {
+    width: 100% !important; /* Make membership list full width */
+  }
+  .social-icons a span {
+    padding-left: 8px !important; /* Slightly reduced padding */
+    white-space: normal; 
+    font-size: 0.75rem; /* Slightly smaller for very small screens */
+    display: inline-block; /* Ensure span takes up space for wrapping */
+    word-break: break-all; /* Break long words if necessary */
+  }
+  .social-icons i {
+    vertical-align: middle; /* Align icons better with text */
+    font-size: 1.5rem; /* Reduce icon size from fs-1 (default ~2.5rem) */
+  }
+  #contact p { /* Contact info uses fs-3, let's ensure it's not too big */
+    font-size: calc(1.275rem + 0.3vw); /* Equivalent to Bootstrap's fs-4 */
+  }
 }
 /* .carousel-caption{
   display: none;
